@@ -1,0 +1,132 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container nav {
+  background-color: #222;
+  padding: 16px;
+  border-bottom: 2px solid #444;
+}
+
+.app-container nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.app-container nav a:hover {
+  color: #00ffff;
+  transition: 0.2s;
+}
+
+/* Forms */
+form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-top: 16px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+form input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+form button {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+}
+
+/* Attribute Buttons */
+.attribute-button {
+  border-radius: 50%;
+  padding: 12px 16px;
+  margin: 4px;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.attribute-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.5);
+}
+
+.attribute-button.selected {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Summary List */
+ul.crewmates-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+ul.crewmates-list li {
+  margin: 12px;
+  text-align: center;
+}
+
+/* Crewmate Avatar */
+.crewmate-avatar {
+  width: 80px;
+  height: 96px;
+  background-color: red;
+  border-radius: 50% 50% 40% 40% / 50% 50% 40% 40%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.crewmate-avatar:hover {
+  transform: scale(1.1);
+}
+
+.crewmate-avatar .backpack {
+  width: 40px;
+  height: 48px;
+  background-color: #333;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  border-radius: 10px;
+}
+
+.crewmate-avatar .visor {
+  width: 48px;
+  height: 24px;
+  background-color: #a5d8ff;
+  border-radius: 20px / 10px;
+  position: absolute;
+  top: 30px;
+  left: 16px;
+}
